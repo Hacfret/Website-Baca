@@ -11,6 +11,9 @@
     <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <title>Website Menulis</title>
@@ -47,8 +50,8 @@
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
       <img src="img/gambar.jpg" alt="logo" width="200" class="rounded-circle img-thumbnail mt-5" />
-      <h1 class="display-4 mt-5">Website Membaca Simpel</h1>
-      <p class="lead mt-3">Oleh Rizqy | 22 Oktober 2021 | No Comments</p>
+      <h1 class="display-4 mt-5" data-aos="fade-up" data-aos-delay="200">Website Membaca Simpel</h1>
+      <p class="lead mt-3" data-aos="fade-up" data-aos-delay="300">Oleh Rizqy | 22 Oktober 2021 | No Comments</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -61,20 +64,20 @@
 
     <!-- About -->
     <section id="tentang" class="text-center">
-      <div class="container mb-5 pt-5">
+      <div class="container mb-5 pt-5" data-aos="fade-in">
         <div class="row text-center mb-3">
           <div class="col mb-5">
             <h2>Tentang</h2>
           </div>
         </div>
         <div class="row justify-content-between fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="200">
             <p>
               Selamat datang di website menulis! Di sini kamu bisa membaca cerita dari orang lain, bahkan kamu bisa menulis cerita untuk menginspirasi orang banyak lho! Yuk bangkitkan minat baca anak bangsa dengan hal-hal yang terkecil
               dulu.
             </p>
           </div>
-          <div class="col-md-4 justify-content-between fs-5 text-center">
+          <div class="col-md-4 justify-content-between fs-5 text-center" data-aos="fade-left" data-aos-delay="300">
             <p>
               Banyak banget cerita yang akan kamu baca, mulai dari genre apa aja! Kamu bisa juga nulis cerita kamu dibawah, tinggal isi form kemudian masukan email serta cerita kamu, maka cerita kamu langsung ke publish di website ini.
               Gimana, Menarik kan? Ayo mulai membaca sekarang!
@@ -94,15 +97,15 @@
 
     <!-- Story -->
     <section id="story">
-      <div class="container">
+      <div class="container" data-aos="zoom-in-up" data-aos-duration="5000">
         <div class="row text-center mb-5">
-          <div class="col">
+          <div class="col" data-aos="fade-in">
             <h2>Cerita</h2>
           </div>
         </div>
         <div class="row justify-content-center justify-content-around">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-up">
               <img src="img/jenis/1.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <p class="card-text text-center">Mistis / Legenda</p>
@@ -110,7 +113,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-up">
               <img src="img/jenis/2.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <p class="card-text text-center">Sci-Fi</p>
@@ -118,7 +121,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-up">
               <img src="img/jenis/3.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <p class="card-text text-center">Slice of Life</p>
@@ -126,7 +129,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card" href="#">
+            <div class="card" href="#" data-aos="zoom-in-up">
               <img src="img/jenis/4.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <p class="card-text text-center">Romantis</p>
@@ -135,7 +138,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/jenis/5.jpg" class="card-img-top" alt="..." />
+              <img src="img/jenis/5.jpg" class="card-img-top" alt="..." data-aos="zoom-in-up" />
               <div class="card-body">
                 <p class="card-text text-center">Aksi / Petualangan</p>
               </div>
@@ -157,12 +160,12 @@
     <section id="bagikan">
       <div class="container">
         <div class="row text-center mb-5">
-          <div class="col">
+          <div class="col" data-aos="fade-down">
             <h2>Masukan Cerita Kamu Di sini!</h2>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-8">
+          <div class="col-md-8" data-aos="fade-down">
             <form>
               <div class="mb-3">
                 <label for="name" class="form-label">Nama Kamu</label>
@@ -198,5 +201,9 @@
     </footer>
     <!-- Akhir Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
